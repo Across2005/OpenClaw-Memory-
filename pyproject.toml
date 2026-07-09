@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "openclaw-memory"
+version = "0.1.0"
+description = "Local self-evolving Agent memory system for Coze skill deployment"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = ["agent", "memory", "coze", "skill", "self-evolving"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+crypto = ["cryptography>=42.0"]
+dev = ["pytest>=7.0"]
